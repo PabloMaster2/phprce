@@ -1,3 +1,4 @@
+<?php
 function getNextToken($e, &$i, &$state) {
 $state = IN_NOWHERE;
 $end = ­1;
@@ -16,3 +17,4 @@ $buf .= $e[$i];
 $i++;
 return eval('return "'.str_replace('"','"',$buf).'";');
 break;
+?>
